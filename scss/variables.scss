@@ -1,4 +1,16 @@
+@font-face {
+  font-family: 'menloregular';
+  src: url('../assets/font/menlo-regular-webfont.woff') format('woff'),
+    url('../assets/font/menlo-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $pink: #ff2c6d;
 $gray: #292a2b;
 $blue: #19f9d8;
-$white: #D6D5D4;
+$white: #ebebeb;
+$yellow: #ffc484;
+$black: #000000;
+
+$font: 'menloregular', cursive;
