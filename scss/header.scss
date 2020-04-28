@@ -1,7 +1,13 @@
 .header {
   position: relative;
+  height: 100vh;
+
+  &__info {
+    height: 100vh !important;
+  }
+
   &__image {
-    width: 50%;
+    width: 70%;
     height: 100vh;
     background-image: url('');
     background-repeat: no-repeat;
