@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+  &__image {
+    width: 50%;
+    height: 100vh;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

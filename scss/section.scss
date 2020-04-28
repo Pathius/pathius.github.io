@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+.section {
+  background-color: $gray;
+  min-height: 100vh;
+  width: 50%;
+  &-white {
+    @extend .section;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    &-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &-subtitle {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+  &__text {
+    font-family: $font-rendered;
+    letter-spacing: 0.0375em;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2;
+    padding: 0 5rem;
+  }
+}

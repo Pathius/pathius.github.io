@@ -1,43 +1,20 @@
 @import './variables.scss';
 @import './reset.scss';
 @import './tag.scss';
+@import './header.scss';
+@import './section.scss';
 
 body {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.header {
-  background-color: $gray;
-  min-height: 100vh;
-  width: 50%;
-  position: relative;
-  &__info {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding-right: 30px;
-    box-sizing: border-box;
-    &-title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 50px;
-    }
-    &-subtitle {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-    }
-  }
-  &__image {
-    width: 50%;
-    height: 100vh;
-    background-image: url('');
-    background-color: $gray;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+strong {
+  font-weight: 600;
 }
