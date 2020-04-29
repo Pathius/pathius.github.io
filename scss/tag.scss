@@ -3,18 +3,31 @@
 .tag {
   color: $pink;
   font-family: $font;
-  &__brackets {
-    color: $yellow;
-    white-space: nowrap;
-  }
-  &__body {
+  &__simulation {
     position: absolute;
-    font-size: 18px;
+    font-size: 17px;
     top: 10px;
     left: 10px;
+    line-height: 1.5;
+    font-weight: bold;
   }
-  &__comments {
+  &__white {
+    color: $white;
+  }
+  &__yellow {
+    color: $yellow;
+  }
+  &__gold {
+    color: $gold;
+  }
+  &__white {
     color: $white;
     font-family: $font;
+  }
+  &__gray {
+    color: $light-gray;
+  }
+  &__blue {
+    color: $blue;
   }
 }
