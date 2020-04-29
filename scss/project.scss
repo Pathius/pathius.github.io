@@ -1,13 +1,14 @@
 .section-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  width: 70%;
 }
 
 .project {
-  width: 200px;
   margin: 40px;
+  vertical-align: top;
 
   &__image {
     width: 100%;
