@@ -98,7 +98,7 @@
       </span>
       <section class="section__info header__info">
         <section class="section__info-text">
-          <h1 class="section__info-title tag">
+          <h1 class="section__info-title tag" tabindex="0">
             <span class="tag__yellow">&lt;</span>BartoszUrbanski
             <span class="tag__yellow">/&gt;</span>
           </h1>
@@ -116,7 +116,7 @@
       <section class="section">
         <section class="section__info">
           <section class="section__info-text">
-            <h2 class="section__info-title tag">
+            <h2 class="section__info-title tag" tabindex="0">
               <span class="tag__yellow">&lt;</span>AboutMe
               <span class="tag__yellow">/&gt;</span>
             </h2>
@@ -131,7 +131,7 @@
           experience. I have been learning programming since 2018 and I love to
           both acquire and pass on knowledge. By that I decided to create
           <a href="https://github.com/PenguinCoders" target="_blank"
-            ><strong>PenguinCoders</strong></a
+            ><strong tabindex="0">PenguinCoders</strong></a
           >. It is a small team whose task is to spread interest in the world of
           Front End. I consider myself passionate about technology and what is
           associated with it. Most of my free I spend time playing basketball
@@ -144,7 +144,7 @@
       <section class="section">
         <section class="section__info">
           <section class="section__info-text">
-            <h2 class="section__info-title tag">
+            <h2 class="section__info-title tag" tabindex="0">
               <span class="tag__yellow">&lt;</span>MySkills
               <span class="tag__yellow">/&gt;</span>
             </h2>
@@ -174,8 +174,11 @@
           <strong>Prettier</strong> and <strong>ESLint</strong>. All of my
           personal projects are on my
           <a href="https://github.com/Pathius" target="_blank"
-            ><strong>GitHub</strong></a
-          >, but I have also experience working with <strong>GitLab</strong>.
+            ><strong tabindex="0">GitHub</strong></a
+          >, but I have also experience working with
+          <a href="https://gitlab.com/Pathius" target="_blank"
+            ><strong tabindex="0">GitLab</strong></a
+          >.
         </p>
       </section>
 
@@ -183,7 +186,7 @@
       <section class="section">
         <section class="section__info">
           <section class="section__info-text">
-            <h2 class="section__info-title tag">
+            <h2 class="section__info-title tag" tabindex="0">
               <span class="tag__yellow">&lt;</span>MyProjects
               <span class="tag__yellow">/&gt;</span>
             </h2>
@@ -199,14 +202,18 @@
               href="https://github.com/Pathius/recruitment-task"
               target="__blank"
             >
-              <img src="icons/Github.svg" alt="" />
+              <span tabindex="0">
+                <img src="icons/Github.svg" alt="" />
+              </span>
             </a>
             <a
               class="project__image-icon"
               href="https://pathius.github.io/recruitment-task/"
               target="__blank"
             >
-              <img src="icons/Website.svg" alt="" />
+              <span tabindex="0">
+                <img src="icons/Website.svg" alt="" />
+              </span>
             </a>
           </div>
           <h3 class="project__title">Pizza App</h3>
@@ -227,14 +234,18 @@
               href="https://github.com/Pathius/movie-search"
               target="__blank"
             >
-              <img src="icons/Github.svg" alt="" />
+              <span tabindex="0">
+                <img src="icons/Github.svg" alt="" />
+              </span>
             </a>
             <a
               class="project__image-icon"
               href="https://heuristic-montalcini-0b1424.netlify.app/#/"
               target="__blank"
             >
-              <img src="icons/Website.svg" alt="" />
+              <span tabindex="0">
+                <img src="icons/Website.svg" alt="" />
+              </span>
             </a>
           </div>
           <h3 class="project__title">Movie Search</h3>
@@ -255,7 +266,9 @@
               href="https://github.com/Pathius/pathius.github.io"
               target="__blank"
             >
-              <img src="icons/Github.svg" alt="" />
+              <span tabindex="0">
+                <img src="icons/Github.svg" alt="" />
+              </span>
             </a>
           </div>
           <h3 class="project__title">My portfolio</h3>
@@ -266,11 +279,12 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
       <section class="section">
         <section class="section__info">
           <section class="section__info-text">
-            <h2 class="section__info-title tag">
+            <h2 class="section__info-title tag" tabindex="0">
               <span class="tag__yellow">&lt;</span>ContactMe
               <span class="tag__yellow">/&gt;</span>
             </h2>
@@ -281,41 +295,66 @@
         <form class="form block-first" id="form-left">
           <h3 class="form__title title-first">Send me a message...</h3>
           <div class="form__element">
-            <input class="form__text" id="name" type="text" required />
+            <input
+              class="form__text"
+              id="name"
+              type="text"
+              required
+              tabindex="0"
+            />
             <label class="form__label" for="name">Name</label>
           </div>
           <div class="form__element">
-            <input class="form__text" id="email" type="text" required />
+            <input
+              class="form__text"
+              id="email"
+              type="text"
+              required
+              tabindex="0"
+            />
             <label class="form__label" for="email">Email</label>
           </div>
           <div class="form__element">
-            <textarea class="form__text-area" id="message" required></textarea>
+            <textarea
+              class="form__text-area"
+              id="message"
+              required
+              tabindex="0"
+            ></textarea>
             <label class="form__label" for="message">Message</label>
           </div>
-          <button class="form__button">SEND</button>
+          <button class="form__button" tabindex="0">SEND</button>
         </form>
         <section class="form block-second" id="form-right">
-          <h3 class="form__title-right title-second">
+          <h3 class="form__title-right title-second" tabindex="0">
             ...or find me elsewhere
           </h3>
           <div class="form__icons">
             <a class="form__icons-element" href="https://github.com/Pathius">
-              <img class="form__icon" src="./icons/Github.svg" alt="" />
+              <span tabindex="0">
+                <img class="form__icon" src="./icons/Github.svg" alt="" />
+              </span>
             </a>
-            <a
+            <span
               class="form__icons-element"
               href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/"
             >
+            <span tabindex="0">
               <img class="form__icon" src="./icons/Linkedin.svg" alt="" />
+            </span>
             </a>
             <a
               class="form__icons-element"
               href="mailto:bartoszurbanski.biznes@gmail.com"
             >
+            <span tabindex="0">
               <img class="form__icon" src="./icons/Email.svg" alt="" />
+            </span>
             </a>
             <a class="form__icons-element" href="">
+            <span tabindex="0">
               <img class="form__icon" src="./icons/Resume.svg" alt="" />
+            </span>
             </a>
           </div>
         </section>
