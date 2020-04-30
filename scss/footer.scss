@@ -1,10 +1,9 @@
 @import './variables.scss';
 
 .section-contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 16px;
-  grid-row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 70%;
@@ -79,6 +78,11 @@
     font-weight: 100;
     word-spacing: 0.05em;
     line-height: 1.5;
+
+    &-right {
+      @extend .form__title;
+      text-align: center;
+    }
   }
 
   &__button {
@@ -95,4 +99,41 @@
       background-color: $gray;
     }
   }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &-element {
+      margin: 10px;
+      &:hover .form__icon {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  &__icon {
+    filter: invert(1);
+    height: 35px;
+    width: 35px;
+    transition: transform 0.4s;
+  }
 }
+
+// .title {
+//   &-first {
+//     order: 1;
+//   }
+//   &-second {
+//     order: 2;
+//   }
+// }
+// .block {
+//   &-first {
+//     order: 3;
+//   }
+//   &-second {
+//     order: 4;
+//   }
+// }
