@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pathius/pathius.github.io.git"
+  },
+  "keywords": [],
+  "author": "Bartosz Urbański",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pathius/pathius.github.io/issues"
+  },
+  "homepage": "https://github.com/Pathius/pathius.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
