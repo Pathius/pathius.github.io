@@ -1,10 +1,4 @@
 import experience from './js/experience';
 import './scss/style.scss';
 
-experience('experience');
-
-class Hero {
-  constructor() {
-    this.name = 'John';
-  }
-}
+experience('experience', [['2020, 1, 18']]);
