@@ -29,7 +29,7 @@ export default function (id, dates) {
     }
   }
 
-  // Change time for milliseconds to months format
+  // Change time from milliseconds to months format
   time = Math.floor(time / 1000 / 60 / 60 / 24 / 30);
 
   // Display information in correct way
