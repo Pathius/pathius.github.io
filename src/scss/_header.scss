@@ -1,15 +1,14 @@
 .header {
+  width: 100%;
   position: relative;
-  height: 100vh;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
 
-  &__info {
-    height: 100vh !important;
-  }
-
-  &__image {
-    width: 70%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  &__titles {
+    display: flex;
+    flex-direction: column;
   }
 }

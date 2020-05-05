@@ -1,13 +1,11 @@
 @import './variables.scss';
 @import './reset.scss';
-@import './tag.scss';
 @import './header.scss';
-@import './section.scss';
-@import './project.scss';
-@import './footer.scss';
 body {
   display: flex;
   flex-wrap: wrap;
+  background-color: $white;
+  font-family: $font;
 }
 
 main,
