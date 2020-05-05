@@ -32,9 +32,55 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__titles">
-        <h2 class="header__title">Bartosz Urbański</h2>
-        <h3 class="header__subtitle">Front End Developer</h3>
+        <a href="#">
+          <h2 class="header__title">Bartosz Urbański</h2>
+          <h3 class="header__subtitle">Front End Developer</h3>
+        </a>
       </div>
+      <nav class="header__navigation">
+        <ul class="navigation__site">
+          <a href="#">
+            <li class="navigation__site-item navigation__site-item--active">
+              home
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__site-item">
+              about
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__site-item">
+              skills
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__site-item">
+              projects
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__site-item">
+              contact
+            </li>
+          </a>
+        </ul>
+        <ul class="navigation__icons">
+          <a href="https://github.com/Pathius" target="_blank">
+            <li class="navigation__icon">
+              <img src=<%=require("./assets/icons/Github.svg")%> alt="">
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/"
+            target="_blank"
+          >
+            <li class="navigation__icon">
+              <img src=<%=require("./assets/icons/Linkedin.svg")%> alt="">
+            </li>
+          </a>
+        </ul>
+      </nav>
     </header>
     <!-- JS -->
   </body>
