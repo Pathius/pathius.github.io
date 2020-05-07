@@ -3,6 +3,8 @@
 @import './header.scss';
 @import './navigation';
 @import './animations';
+@import './welcome';
+@import './burger';
 body {
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +33,10 @@ hr {
   border-left: 2px solid $gray;
   height: 70%;
   width: 1px;
+}
+
+.black {
+  color: $white;
+  background-color: $gray;
+  padding: 0 10px;
 }
