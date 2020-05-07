@@ -1,3 +1,4 @@
+// COLORS
 $pink: #ff2c6d;
 $gray: #0f0f0f;
 $light-gray: #676b79;
@@ -7,4 +8,16 @@ $yellow: #ffcc95;
 $gold: #ffb86c;
 $black: #000000;
 
+// FONT
 $font: 'Source Sans Pro', sans-serif;
+
+// BREAKPOINTS
+$mobile-small: 350px;
+$mobile: 600px;
+$tablet: 768px;
+$tablet-big: 1024px;
+
+// ANIMATION TIME
+$time: 0.2s;
+$time--short: 0.1s;
+$time--long: 0.3s;
