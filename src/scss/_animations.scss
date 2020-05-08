@@ -19,3 +19,21 @@
     right: 0;
   }
 }
+
+@keyframes showUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes showDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}
