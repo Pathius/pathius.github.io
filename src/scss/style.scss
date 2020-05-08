@@ -39,7 +39,20 @@ hr {
 }
 
 .black {
+  position: relative;
   color: $white;
-  background-color: $black;
   padding: 0 10px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $black;
+    animation: slideLeft $time-long forwards;
+  }
 }

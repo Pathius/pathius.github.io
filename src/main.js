@@ -1,5 +1,7 @@
 import experience from './js/experience';
 import toggleNavigation from './js/navigation';
+import pageLoad from './js/pageLoad';
+
 import './scss/style.scss';
 
 experience('experience', [['2020, 1, 18']]);
@@ -7,3 +9,5 @@ experience('experience', [['2020, 1, 18']]);
 const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', toggleNavigation);
+
+pageLoad();

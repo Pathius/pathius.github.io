@@ -6,7 +6,7 @@
   padding: 60px 0;
 
   @media screen and (max-width: $mobile) {
-    padding: 40px 30px;
+    padding: 40px 25px;
   }
 
   &__section {
@@ -52,11 +52,10 @@
     display: block;
     position: relative;
     width: 40%;
-    text-align: justify;
     margin-left: 120px;
     font-weight: 300;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $white;
 
     @media screen and (max-width: 1440px) {

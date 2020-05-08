@@ -100,7 +100,7 @@
     height: 22px;
     width: 22px;
     margin: 15px;
-    transition: transform 0.4s;
+    transition: transform $time;
 
     @media screen and (max-width: $mobile) {
       height: 30px;
