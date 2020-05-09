@@ -4,7 +4,7 @@ export default function () {
   document.addEventListener('mousemove', (event) => {
     cursor.setAttribute(
       'style',
-      `top: ${event.pageY - 8}px; left: ${event.pageX - 8}px`
+      `display: block; top: ${event.pageY - 8}px; left: ${event.pageX - 8}px;`
     );
   });
 }
