@@ -1,0 +1,10 @@
+.cursor {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $white;
+  mix-blend-mode: difference;
+  transition-duration: 0;
+  transition-timing-function: ease-out;
+  z-index: 1;
+}
