@@ -8,11 +8,7 @@ export default function () {
 
   if (burgerElements && burgerElements.length === 3) {
     for (let element of burgerElements) {
-      if (element.classList.contains('burger__element-active')) {
-        element.classList.remove('burger__element-active');
-      } else {
-        element.classList.add('burger__element-active');
-      }
+      element.classList.toggle('burger__element-active');
     }
   }
 
@@ -20,10 +16,6 @@ export default function () {
   const navigation = document.querySelector('.navigation');
 
   if (navigation && navigation.tagName === 'NAV') {
-    if (navigation.classList.contains('navigation-active')) {
-      navigation.classList.remove('navigation-active');
-    } else {
-      navigation.classList.add('navigation-active');
-    }
+    navigation.classList.toggle('navigation-active');
   }
 }
