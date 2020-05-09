@@ -71,6 +71,7 @@
 
       &:hover {
         color: $white;
+        cursor: none;
 
         @media screen and (max-width: $mobile) {
           color: $black;
