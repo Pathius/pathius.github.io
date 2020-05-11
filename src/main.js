@@ -1,7 +1,8 @@
-import experience from './js/experience';
-import toggleNavigation from './js/navigation';
-import pageLoad from './js/pageLoad';
-import cursor from './js/cursor';
+import experience from './js/functions/experience';
+import toggleNavigation from './js/functions/navigation';
+import pageLoad from './js/functions/pageLoad';
+import cursor from './js/functions/cursor';
+import renderProjects from './js/functions/renderProjects';
 
 import './scss/style.scss';
 
@@ -14,3 +15,5 @@ burger.addEventListener('click', toggleNavigation);
 pageLoad();
 
 cursor();
+
+renderProjects();
