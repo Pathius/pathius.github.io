@@ -1,6 +1,7 @@
 .skills {
   width: 100%;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     color: white;
@@ -10,7 +11,6 @@
     font-weight: bold;
     font-size: 64px;
     line-height: 75px;
-    padding: 20px 30px 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -54,6 +54,32 @@
         font-size: 24px;
         line-height: 32px;
       }
+    }
+  }
+}
+
+.tools {
+  @extend .skills;
+  background-color: $black;
+  &__title {
+    @extend .skills__title;
+    transform: translateX(-51%);
+
+    &-wrapper {
+      @extend .skills__title-wrapper;
+      align-self: flex-end;
+      justify-content: flex-start;
+      background-color: $white;
+    }
+  }
+
+  &__list {
+    @extend .skills__list;
+
+    &-element {
+      @extend .skills__list-element;
+      background-color: $white;
+      color: $black !important;
     }
   }
 }
