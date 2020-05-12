@@ -169,6 +169,58 @@
         <!-- PROJECTS ARE INJECTED FROM JS -->
       </section>
     </section>
+    <footer class="contact">
+      <div class="contact__title-wrapper">
+        <h2 class="contact__title">Contact Me</h2>
+      </div>
+      <form class="form block-first" id="form-left">
+        <h3 class="form__title title-first">Send me a message...</h3>
+        <div class="form__element">
+          <input
+            class="form__text"
+            id="name"
+            type="text"
+            required
+            tabindex="0"
+          />
+          <label class="form__label" for="name">Name</label>
+        </div>
+        <div class="form__element">
+          <input
+            class="form__text"
+            id="email"
+            type="text"
+            required
+            tabindex="0"
+          />
+          <label class="form__label" for="email">Email</label>
+        </div>
+        <div class="form__element">
+          <textarea
+            class="form__text-area"
+            id="message"
+            required
+            tabindex="0"
+          ></textarea>
+          <label class="form__label" for="message">Message</label>
+        </div>
+        <button class="form__button" tabindex="0">Send</button>
+      </form>
+      <section class="contact__icons">
+        <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
+          <img class="contact__icons-element" src=<%=require("./assets/icons/Email.svg")%> alt="">
+        </a>
+        <a href="https://github.com/Pathius" target="_blank">
+          <img class="contact__icons-element" src=<%=require("./assets/icons/Github.svg")%> alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
+          <img class="contact__icons-element" src=<%=require("./assets/icons/Linkedin.svg")%> alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
+          <img class="contact__icons-element--resume" src=<%=require("./assets/icons/Resume.svg")%> alt="">
+        </a>
+      </section>
+    </footer>
     <!-- JS -->
   </body>
 </html>
