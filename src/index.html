@@ -179,45 +179,12 @@
       <div class="contact__title-wrapper">
         <h2 class="contact__title">Contact Me</h2>
       </div>
-      <form class="form block-first" id="form-left">
-        <h3 class="form__title title-first">Send me a message...</h3>
-        <div class="form__element">
-          <input
-            class="form__text"
-            id="name"
-            type="text"
-            required
-            tabindex="0"
-          />
-          <label class="form__label" for="name">Name</label>
-        </div>
-        <div class="form__element">
-          <input
-            class="form__text"
-            id="email"
-            type="text"
-            required
-            tabindex="0"
-          />
-          <label class="form__label" for="email">Email</label>
-        </div>
-        <div class="form__element">
-          <textarea
-            class="form__text-area"
-            id="message"
-            required
-            tabindex="0"
-          ></textarea>
-          <label class="form__label" for="message">Message</label>
-        </div>
-        <button class="form__button" tabindex="0">Send</button>
-      </form>
+      <p class="contact__text">
+        Feel free to drop an “Hello”,</br>
+        send me an <a href="mailto:bartoszurbanski.biznes@gmail.com" target="_blank"><strong>email</strong></a> and I'll write to you back!</br>
+        You can also find me on different social medias.
+      </p>
       <section class="contact__icons">
-        <a href="mailto:bartoszurbanski.biznes@gmail.com" target="_blank">
-          <span title="Email me" tabindex="0">
-            <img class="contact__icons-element" src=<%=require("./assets/icons/Email.svg")%> alt="My email">
-          </span>
-        </a>
         <a href="https://github.com/Pathius" target="_blank">
           <span title="Visit my GitHub" tabindex="0">
             <img class="contact__icons-element" src=<%=require("./assets/icons/Github.svg")%> alt="My GitHub account">
@@ -228,11 +195,7 @@
             <img class="contact__icons-element" src=<%=require("./assets/icons/Linkedin.svg")%> alt="My Linkedin account">
           </span>
         </a>
-        <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
-          <span title="See my resume" tabindex="0">
-            <img class="contact__icons-element--resume" src=<%=require("./assets/icons/Resume.svg")%> alt="My resume">
-          </span>
-        </a>
+
       </section>
     </footer>
     <!-- JS -->
