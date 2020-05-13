@@ -1,15 +1,15 @@
 export default [
   {
     description:
-      "<a><strong>Pizza App</strong></a> is a user friendly system of creating and ordering pizzas. Application was originally created for recruitment process at newfantastic company. After some time, I decided to spend some time and improve it. It's built with <strong>Vue.js</strong>! </br> </br> ",
+      "<strong>Pizza App</strong> is a user friendly system of creating and ordering pizzas.  Application was originally created for recruitment process at newfantastic company. After some time, I decided to spend some time and improve it.It's built with <strong>Vue.js</strong>! </br> </br> ",
     links: [
       {
         link: 'https://github.com/Pathius/recruitment-task',
-        buttonText: 'see code',
+        buttonText: '<span tabindex="0">see code</span>',
       },
       {
         link: 'https://pathius.github.io/recruitment-task/#/',
-        buttonText: 'see live',
+        buttonText: '<span tabindex="0">see live</span>',
       },
     ],
     name:

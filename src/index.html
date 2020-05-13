@@ -45,34 +45,34 @@
       <nav class="header__navigation navigation">
         <ul class="navigation__site">
           <a href="#">
-            <li class="navigation__site-item navigation__site-item--active">
+            <li class="navigation__site-item" tabindex="0">
               home
             </li>
           </a>
           <a href="#">
-            <li class="navigation__site-item">
+            <li class="navigation__site-item" tabindex="0">
               about
             </li>
           </a>
           <a href="#">
-            <li class="navigation__site-item">
+            <li class="navigation__site-item" tabindex="0">
               skills
             </li>
           </a>
           <a href="#">
-            <li class="navigation__site-item">
+            <li class="navigation__site-item" tabindex="0">
               projects
             </li>
           </a>
           <a href="#">
-            <li class="navigation__site-item">
+            <li class="navigation__site-item" tabindex="0">
               contact
             </li>
           </a>
         </ul>
         <ul class="navigation__icons">
           <a href="https://github.com/Pathius" target="_blank">
-            <li class="navigation__icon">
+            <li class="navigation__icon" tabindex="0">
               <img src=<%=require("./assets/icons/Github.svg")%> alt="">
             </li>
           </a>
@@ -80,7 +80,7 @@
             href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/"
             target="_blank"
           >
-            <li class="navigation__icon">
+            <li class="navigation__icon" tabindex="0">
               <img src=<%=require("./assets/icons/Linkedin.svg")%> alt="">
             </li>
           </a>
@@ -205,16 +205,24 @@
       </form>
       <section class="contact__icons">
         <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
-          <img class="contact__icons-element" src=<%=require("./assets/icons/Email.svg")%> alt="">
+          <span tabindex="0">
+            <img class="contact__icons-element" src=<%=require("./assets/icons/Email.svg")%> alt="">
+          </span>
         </a>
         <a href="https://github.com/Pathius" target="_blank">
-          <img class="contact__icons-element" src=<%=require("./assets/icons/Github.svg")%> alt="">
+          <span tabindex="0">
+            <img class="contact__icons-element" src=<%=require("./assets/icons/Github.svg")%> alt="">
+          </span>
         </a>
         <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
-          <img class="contact__icons-element" src=<%=require("./assets/icons/Linkedin.svg")%> alt="">
+          <span tabindex="0">
+            <img class="contact__icons-element" src=<%=require("./assets/icons/Linkedin.svg")%> alt="">
+          </span>
         </a>
         <a href="https://www.linkedin.com/in/bartosz-urba%C5%84ski-0237201a0/" target="_blank">
-          <img class="contact__icons-element--resume" src=<%=require("./assets/icons/Resume.svg")%> alt="">
+          <span tabindex="0">
+            <img class="contact__icons-element--resume" src=<%=require("./assets/icons/Resume.svg")%> alt="">
+          </span>
         </a>
       </section>
     </footer>
