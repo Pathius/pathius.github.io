@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 120px;
+  height: 33000px;
   @media screen and (max-width: $mobile) {
     flex-direction: column;
     justify-content: flex-start;
@@ -28,6 +29,8 @@
     line-height: 75px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    opacity: 0;
+    animation: opacity $time-extra-long $time-extra-long forwards;
 
     @media screen and (max-width: $mobile) {
       font-size: 52px;
@@ -41,8 +44,9 @@
       justify-content: flex-end;
       align-items: center;
       padding: 0 20px 0 40px;
-      position: sticky;
       top: 60px;
+      position: sticky;
+      animation: projectsShow300 $time-extra-long forwards;
       @media screen and (max-width: $mobile) {
         width: 70%;
         padding: 0 20px;
