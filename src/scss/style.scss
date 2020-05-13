@@ -7,17 +7,8 @@
 @import './burger';
 @import './about';
 @import './skills';
-@import './cursor';
 @import './projects';
 @import './contact';
-
-// * {
-//   user-select: none;
-
-//   &:hover {
-//     cursor: none;
-//   }
-// }
 
 body {
   display: flex;
@@ -25,7 +16,6 @@ body {
   background-color: $white;
   font-family: $font;
   color: $black;
-  // cursor: none;
 }
 
 main,
