@@ -66,12 +66,14 @@
     padding-left: 15px;
     box-sizing: border-box;
     color: $white;
+    font-family: $font;
 
     &-area {
       @extend .form__text;
       height: 120px;
       padding-top: 10px;
       resize: none;
+      font-family: $font;
     }
 
     &:required {
@@ -132,6 +134,8 @@
     width: 100%;
     color: white;
     cursor: pointer;
+    font-family: $font;
+    font-weight: bold;
 
     &:hover {
       color: $black;
