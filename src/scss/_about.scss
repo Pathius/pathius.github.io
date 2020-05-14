@@ -92,6 +92,10 @@
       width: 50%;
     }
 
+    @media screen and (max-width: $tablet) {
+      margin-left: 40px;
+    }
+
     @media screen and (max-width: $mobile) {
       margin-top: 40px;
       width: 100%;

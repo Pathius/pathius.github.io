@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -10,7 +10,7 @@
   &__heading {
     width: 40%;
     margin-top: 70px;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -30,11 +30,11 @@
     opacity: 0;
     animation: opacity $time-extra-long $time-extra-long forwards;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       font-size: 52px;
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $mobile-small) {
       font-size: 44px;
     }
 
@@ -49,7 +49,7 @@
       top: 60px;
       position: sticky;
       animation: projectsShow300 $time-extra-long forwards;
-      @media screen and (max-width: $mobile) {
+      @media screen and (max-width: $tablet) {
         width: 70%;
         padding: 0 20px;
         justify-content: center;
@@ -62,7 +62,7 @@
   &__listing {
     width: 60%;
     margin-top: 90px;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       width: 100%;
       margin-top: 0;
     }
@@ -72,6 +72,11 @@
 .project {
   display: flex;
   margin-bottom: 90px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 40px;
+  }
+
   @media screen and (max-width: $mobile) {
     flex-direction: column;
     align-items: center;
@@ -79,9 +84,7 @@
   }
 
   &:nth-last-of-type(1) {
-    @media screen and (max-width: $mobile) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 
   & svg {
@@ -95,6 +98,10 @@
   &__description {
     margin-right: 70px;
     line-height: 1.5;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0;
+    }
 
     @media screen and (max-width: $mobile) {
       margin: 20px 0 0;
