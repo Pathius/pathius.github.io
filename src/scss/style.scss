@@ -60,3 +60,8 @@ hr {
     animation: slideLeft $time-long forwards;
   }
 }
+
+.svgAnimate {
+  stroke-dashoffset: 214;
+  animation: svgAnimation 2.5s ease forwards;
+}

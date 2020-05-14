@@ -73,3 +73,9 @@
     left: 0;
   }
 }
+
+@keyframes svgAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

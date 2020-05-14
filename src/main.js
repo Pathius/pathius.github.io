@@ -3,6 +3,7 @@ import toggleNavigation from './js/functions/navigation';
 import pageLoad from './js/functions/pageLoad';
 import renderProjects from './js/functions/renderProjects';
 import scrollTo from './js/functions/scrollTo';
+import svgAnimation from './js/functions/svgAnimation';
 
 import './scss/style.scss';
 
@@ -25,3 +26,5 @@ for (let element of navElements) {
     scrollTo(element.id.split('-')[1], 2000);
   });
 }
+
+svgAnimation();
