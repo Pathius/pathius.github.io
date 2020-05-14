@@ -6,7 +6,6 @@
   &__title {
     color: white;
     transform: translateX(51%);
-    mix-blend-mode: difference;
     color: $white;
     font-weight: bold;
     font-size: 64px;
@@ -18,6 +17,11 @@
 
     @media screen and (max-width: $mobile) {
       font-size: 52px;
+    }
+
+    &-black {
+      mix-blend-mode: normal;
+      color: $black;
     }
 
     &-wrapper {
@@ -87,6 +91,7 @@
   &__title {
     @extend .skills__title;
     transform: translateX(-51%);
+    mix-blend-mode: difference;
 
     &-wrapper {
       @extend .skills__title-wrapper;
