@@ -16,6 +16,10 @@
     opacity: 0;
     animation: opacity forwards $time-extra-long $time-extra-long;
 
+    @media screen and (max-width: $mobile) {
+      font-size: 52px;
+    }
+
     &-wrapper {
       width: 300px;
       margin-top: 90px;
@@ -29,7 +33,9 @@
       animation: skillsShow300 $time-extra-long forwards;
 
       @media screen and (max-width: $mobile) {
+        margin-top: 50px;
         width: 50%;
+        height: 70px;
       }
     }
   }
@@ -47,7 +53,7 @@
 
     @media screen and (max-width: $mobile) {
       margin: 60px auto;
-      width: 80%;
+      width: 90%;
     }
 
     &-element {
@@ -59,8 +65,9 @@
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 32px;
+        margin: 5px 5px;
       }
     }
   }

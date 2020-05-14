@@ -27,6 +27,11 @@
     }
 
     @media screen and (max-width: $mobile) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media screen and (max-width: $mobile-small) {
       font-size: 32px;
       line-height: 38px;
     }

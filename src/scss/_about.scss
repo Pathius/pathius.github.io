@@ -29,6 +29,21 @@
     opacity: 0;
     animation: opacity $time-extra-long forwards 1s;
 
+    @media screen and (max-width: $mobile) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: $mobile-small) {
+      font-size: 44px;
+      padding: 30px 30px 30px;
+    }
+
+    & br {
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
+    }
+
     &-wrapper {
       position: relative;
       display: inline-block;
@@ -101,7 +116,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      animation: showDown 1s forwards 1s;
+      animation: showDown 1.5s forwards 1.2s;
     }
   }
 }
