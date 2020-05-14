@@ -1,8 +1,6 @@
 export default function (id, duration = 2000) {
-  console.log(id);
   const element = document.getElementById(id);
-  console.log(element);
-  const { top: elementPosition } = element.getBoundingClientRect();
+  const elementPosition = element.offsetTop;
   const windowPosition = window.pageYOffset;
   const distance = elementPosition - windowPosition;
   let startTime = null;
