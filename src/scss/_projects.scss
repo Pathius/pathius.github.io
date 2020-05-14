@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
   @media screen and (max-width: $tablet) {
     flex-direction: column;
     justify-content: flex-start;
@@ -30,6 +31,16 @@
     opacity: 0;
     animation: opacity $time-extra-long $time-extra-long forwards;
 
+    @media screen and (max-width: $QHD) {
+      font-size: 100px;
+      line-height: 110px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      font-size: 64px;
+      line-height: 75px;
+    }
+
     @media screen and (max-width: $tablet) {
       font-size: 52px;
     }
@@ -49,6 +60,17 @@
       top: 60px;
       position: sticky;
       animation: projectsShow300 $time-extra-long forwards;
+
+      @media screen and (max-width: $QHD) {
+        width: 500px;
+        height: 150px;
+      }
+
+      @media screen and (max-width: $FHD) {
+        width: 300px;
+        height: 100px;
+      }
+
       @media screen and (max-width: $tablet) {
         width: 70%;
         padding: 0 20px;
@@ -71,7 +93,14 @@
 
 .project {
   display: flex;
-  margin-bottom: 90px;
+
+  @media screen and (max-width: $QHD) {
+    margin-bottom: 180px;
+  }
+
+  @media screen and (max-width: $FHD) {
+    margin-bottom: 90px;
+  }
 
   @media screen and (max-width: $tablet) {
     padding: 0 40px;
@@ -88,8 +117,17 @@
   }
 
   & svg {
-    width: 250px;
     margin-right: 60px;
+
+    @media screen and (max-width: $QHD) {
+      padding-top: 20px;
+      width: 400px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      width: 250px;
+    }
+
     @media screen and (max-width: $mobile) {
       margin-right: 0px;
     }
@@ -98,6 +136,16 @@
   &__description {
     margin-right: 70px;
     line-height: 1.5;
+    max-width: 500px;
+
+    @media screen and (max-width: $QHD) {
+      font-size: 26px;
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      font-size: 16px;
+    }
 
     @media screen and (max-width: $tablet) {
       margin: 0;

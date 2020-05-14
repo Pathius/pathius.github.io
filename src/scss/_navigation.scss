@@ -44,6 +44,14 @@
       transition: color $time;
       user-select: none;
 
+      @media screen and (max-width: $QHD) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: $FHD) {
+        font-size: 16px;
+      }
+
       @media screen and (max-width: $tablet) {
         margin: 0 5px;
       }
@@ -98,10 +106,18 @@
   }
 
   &__icon {
-    height: 22px;
-    width: 22px;
     margin: 15px;
     transition: transform $time;
+
+    @media screen and (max-width: $QHD) {
+      height: 30px;
+      width: 30px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      height: 22px;
+      width: 22px;
+    }
 
     @media screen and (max-width: $mobile) {
       height: 30px;

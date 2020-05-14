@@ -8,12 +8,20 @@
     transform: translateX(51%);
     color: $white;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 75px;
     text-transform: uppercase;
     letter-spacing: 4px;
     opacity: 0;
     animation: opacity forwards $time-extra-long $time-extra-long;
+
+    @media screen and (max-width: $QHD) {
+      font-size: 100px;
+      line-height: 110px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      font-size: 64px;
+      line-height: 75px;
+    }
 
     @media screen and (max-width: $mobile) {
       font-size: 52px;
@@ -35,6 +43,16 @@
       position: relative;
       left: -300px;
       animation: skillsShow300 $time-extra-long forwards;
+
+      @media screen and (max-width: $QHD) {
+        width: 500px;
+        height: 150px;
+      }
+
+      @media screen and (max-width: $FHD) {
+        width: 300px;
+        height: 100px;
+      }
 
       @media screen and (max-width: $tablet) {
         width: 50%;
@@ -75,6 +93,16 @@
       margin: 5px 10px;
       display: inline-block;
       text-transform: uppercase;
+
+      @media screen and (max-width: $QHD) {
+        font-size: 40px;
+        line-height: 52px;
+      }
+
+      @media screen and (max-width: $FHD) {
+        font-size: 28px;
+        line-height: 34px;
+      }
 
       @media screen and (max-width: $mobile) {
         font-size: 20px;

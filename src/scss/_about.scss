@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $black;
   padding: 60px 0;
+  width: 100%;
 
   @media screen and (max-width: $mobile) {
     padding: 40px 25px;
@@ -22,12 +23,21 @@
   &__title {
     color: $white;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 75px;
-    padding: 30px 40px 30px;
     text-transform: uppercase;
     opacity: 0;
     animation: opacity $time-extra-long forwards 1s;
+
+    @media screen and (max-width: $QHD) {
+      font-size: 100px;
+      line-height: 110px;
+      padding: 40px 50px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      font-size: 64px;
+      line-height: 75px;
+      padding: 30px 40px;
+    }
 
     @media screen and (max-width: $mobile) {
       font-size: 52px;
@@ -35,7 +45,7 @@
 
     @media screen and (max-width: $mobile-small) {
       font-size: 44px;
-      padding: 30px 30px 30px;
+      padding: 30px;
     }
 
     & br {
@@ -82,11 +92,20 @@
     display: block;
     position: relative;
     width: 40%;
-    margin-left: 120px;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     color: $white;
+
+    @media screen and (max-width: $QHD) {
+      margin-left: 200px;
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      margin-left: 120px;
+      font-size: 18px;
+    }
 
     @media screen and (max-width: 1440px) {
       width: 50%;

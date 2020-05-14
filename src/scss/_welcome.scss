@@ -12,9 +12,17 @@
 
   &__title {
     position: relative;
-    font-size: 72px;
-    line-height: 84px;
     font-weight: bold;
+
+    @media screen and (max-width: $QHD) {
+      font-size: 110px;
+      line-height: 130px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      font-size: 72px;
+      line-height: 84px;
+    }
 
     @media screen and (max-width: 1440px) {
       font-size: 56px;
@@ -58,7 +66,13 @@
   }
 
   &__image {
-    max-height: 70vh;
+    @media screen and (max-width: $QHD) {
+      min-height: 70vh;
+    }
+
+    @media screen and (max-width: $FHD) {
+      max-height: 70vh;
+    }
 
     @media screen and (max-width: $tablet-big) {
       max-height: initial;
