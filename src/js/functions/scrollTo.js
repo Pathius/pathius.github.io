@@ -1,3 +1,5 @@
+import navigation from './navigation';
+
 export default function (id, duration = 2000) {
   const element = document.getElementById(id);
   const elementPosition = element.offsetTop;
@@ -19,4 +21,6 @@ export default function (id, duration = 2000) {
   }
 
   requestAnimationFrame(animation);
+
+  navigation();
 }
