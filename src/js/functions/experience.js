@@ -29,17 +29,22 @@ export default function (id, dates) {
     }
   }
 
+  // Check if time is in correct format
+  if (!time) {
+    return;
+  }
+
   // Change time for milliseconds to months format
   time = Math.floor(time / 1000 / 60 / 60 / 24 / 30);
 
   // Display information in correct way
   if (time < 12) {
-    element.textContent = `${time} months`;
+    element.textContent = `${time} months of`;
   } else if (time <= 12 && time % 12 === 0) {
-    element.textContent = `${time / 12} years`;
+    element.textContent = `${time / 12} years of`;
   } else {
     const years = Math.floor(time / 12);
     const months = time - years * 12;
-    element.textContent = `${years} years and ${months} months`;
+    element.textContent = `${years} years and ${months} months of`;
   }
 }
