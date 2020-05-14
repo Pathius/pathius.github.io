@@ -1,17 +1,17 @@
 import projectsData from '../data/projects';
 
 export default function () {
-  // Assign variables
-  const projectsSection = document.querySelector('.projects__listing');
-  const project = document.createElement('section');
-  const description = document.createElement('p');
-  const name = document.createElement('div');
-
-  // Assign class names
-  project.className = 'project';
-  description.className = 'project__description';
-
   for (const projectData of projectsData) {
+    // Assign variables
+    const projectsSection = document.querySelector('.projects__listing');
+    const project = document.createElement('section');
+    const description = document.createElement('p');
+    const name = document.createElement('div');
+
+    // Assign class names
+    project.className = 'project';
+    description.className = 'project__description';
+
     // Assign data to variables
     description.innerHTML = projectData.description;
     name.innerHTML = projectData.name;
