@@ -79,3 +79,63 @@
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes borderTopRight {
+  from {
+    border: 10px solid $white;
+    border-left: none;
+    border-top: none;
+    top: 0;
+    bottom: 100%;
+    left: calc(100% - 10px);
+    right: 0;
+  }
+  50% {
+    border: 10px solid $white;
+    border-left: none;
+    border-top: none;
+    top: 0;
+    bottom: 0;
+    left: calc(100% - 10px);
+    right: 0;
+  }
+  to {
+    border: 10px solid $white;
+    border-left: none;
+    border-top: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes borderBottomLeft {
+  from {
+    border: 10px solid $white;
+    border-right: none;
+    border-bottom: none;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    border: 10px solid $white;
+    border-right: none;
+    border-bottom: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+  }
+  to {
+    border: 10px solid $white;
+    border-right: none;
+    border-bottom: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
