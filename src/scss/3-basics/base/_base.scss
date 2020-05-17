@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $white;
+  font-family: $font;
+  color: $black;
+  overflow-x: hidden;
+}
+
+main,
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-left: 2px solid $black;
+  height: 70%;
+  width: 1px;
+}
+
+.black {
+  position: relative;
+  color: $white;
+  padding: 0 10px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $black;
+    animation: slideLeft $time-long forwards;
+  }
+}
+
+.svgAnimate {
+  stroke-dashoffset: 214;
+  animation: svgAnimation 2.5s ease forwards;
+}

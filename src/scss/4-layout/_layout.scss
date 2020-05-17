@@ -1,0 +1,16 @@
+// This is the layout .scss file, intended to ONLY @import other files
+
+// LANDING
+@import './landing/welcome';
+
+// ABOUT
+@import './about/about';
+
+// SKILLS
+@import './skills/skills';
+
+// PROJECTS
+@import './projects/projects';
+
+// CONTACT/FOOTER
+@import './contact/contact';
