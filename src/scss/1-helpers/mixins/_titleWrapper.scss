@@ -1,0 +1,29 @@
+@mixin titleWrapper($background-color: $black) {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background-color: $background-color;
+
+  @media screen and (max-width: $UHD) {
+    width: 700px;
+    height: 180px;
+  }
+
+  @media screen and (max-width: $QHD) {
+    width: 500px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: $FHD) {
+    width: 300px;
+    height: 100px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    height: 70px;
+  }
+}
