@@ -1,6 +1,5 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  @include flex($justify-content: flex-start);
   transition: $time-long;
   margin-right: 70px;
 
