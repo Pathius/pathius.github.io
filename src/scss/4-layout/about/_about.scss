@@ -19,6 +19,22 @@
     opacity: 0;
     animation: opacity $time-extra-long forwards 1s;
 
+    @media screen and (max-width: $UHD) {
+      padding: 70px 80px;
+    }
+
+    @media screen and (max-width: $QHD) {
+      padding: 40px 50px;
+    }
+
+    @media screen and (max-width: $FHD) {
+      padding: 30px 40px;
+    }
+
+    @media screen and (max-width: $mobile-small) {
+      padding: 30px;
+    }
+
     & br {
       @media screen and (max-width: $mobile) {
         display: none;
