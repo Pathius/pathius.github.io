@@ -29,27 +29,10 @@
 
     &-wrapper {
       @include flex();
+      @include titleWrapper($background-color: $black);
       position: sticky;
       top: 60px;
-      width: 300px;
-      height: 100px;
       padding: 0 20px 0 40px;
-      background-color: black;
-
-      @media screen and (max-width: $UHD) {
-        width: 700px;
-        height: 180px;
-      }
-
-      @media screen and (max-width: $QHD) {
-        width: 500px;
-        height: 150px;
-      }
-
-      @media screen and (max-width: $FHD) {
-        width: 300px;
-        height: 100px;
-      }
 
       @media screen and (max-width: $tablet) {
         position: static;
