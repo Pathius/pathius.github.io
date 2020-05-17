@@ -1,113 +1,70 @@
 .skills {
+  @include flex($flex-direction: column, $align-items: flex-start);
   width: 100%;
-  display: flex;
-  flex-direction: column;
 
   &__title {
-    color: white;
+    @include sectionTitle($color: $white);
     transform: translateX(51%);
-    color: $white;
-    font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 4px;
-    opacity: 0;
-    animation: opacity forwards $time-extra-long $time-extra-long;
-
-    @media screen and (max-width: $UHD) {
-      font-size: 140px;
-      line-height: 160px;
-    }
-
-    @media screen and (max-width: $QHD) {
-      font-size: 100px;
-      line-height: 110px;
-    }
-
-    @media screen and (max-width: $FHD) {
-      font-size: 64px;
-      line-height: 75px;
-    }
-
-    @media screen and (max-width: $mobile) {
-      font-size: 52px;
-    }
+    animation: opacity both $time-extra-long $time-extra-long;
 
     &-black {
-      mix-blend-mode: normal;
       color: $black;
     }
 
     &-wrapper {
-      width: 300px;
+      @include titleWrapper($background-color: $black);
       margin-top: 90px;
-      background-color: black;
-      height: 100px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      position: relative;
       left: -300px;
       animation: skillsShow300 $time-extra-long forwards;
 
       @media screen and (max-width: $UHD) {
-        width: 700px;
-        height: 180px;
         left: -700px;
         animation: skillsShow700 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $QHD) {
-        width: 500px;
-        height: 150px;
         left: -500px;
         animation: skillsShow500 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $FHD) {
-        width: 300px;
-        height: 100px;
         left: -300px;
         animation: skillsShow300 $time-extra-long forwards;
       }
 
-      @media screen and (max-width: $tablet) {
-        width: 50%;
-      }
-
       @media screen and (max-width: $mobile) {
         margin-top: 50px;
-        height: 70px;
       }
     }
   }
 
   &__list {
+    @include flex();
     width: 50%;
     margin: 80px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    opacity: 0;
-    animation: opacity forwards $time-extra-long
-      Calc($time-extra-long + $time-long);
+    animation: opacity both $time-extra-long Calc($time-extra-long + $time-long);
 
     @media screen and (max-width: $tablet) {
-      margin: 60px auto;
       width: 90%;
+      margin: 60px auto;
     }
 
     @media screen and (max-width: $mobile) {
-      margin: 60px auto;
       width: 90%;
+      margin: 60px auto;
     }
 
     &-element {
       @extend .black;
+      display: inline-block;
       font-size: 28px;
       line-height: 34px;
       margin: 5px 10px;
-      display: inline-block;
       text-transform: uppercase;
 
       @media screen and (max-width: $UHD) {
@@ -139,6 +96,7 @@
 .tools {
   @extend .skills;
   background-color: $black;
+
   &__title {
     @extend .skills__title;
     transform: translateX(-51%);
@@ -161,7 +119,7 @@
     &-element {
       @extend .skills__list-element;
       background-color: $white;
-      color: $black !important;
+      color: $black;
     }
   }
 }
