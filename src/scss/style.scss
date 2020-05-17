@@ -65,3 +65,19 @@ hr {
   stroke-dashoffset: 214;
   animation: svgAnimation 2.5s ease forwards;
 }
+
+// This is the main .scss file, intended to ONLY @import other files
+
+// 1 - HELPERS
+@import './1-helpers/helpers';
+
+// 2 - TOOLS
+@import './2-tools/tools';
+
+// 3 - BASICS
+@import './3-basics/basics';
+
+// 4 - LAYOUT
+@import './4-layout/layout';
+
+@import './5-components/components';
