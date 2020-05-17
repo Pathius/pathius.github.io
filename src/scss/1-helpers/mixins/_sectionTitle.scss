@@ -6,19 +6,16 @@
   @media screen and (max-width: $UHD) {
     font-size: 140px;
     line-height: 160px;
-    padding: 70px 80px;
   }
 
   @media screen and (max-width: $QHD) {
     font-size: 100px;
     line-height: 110px;
-    padding: 40px 50px;
   }
 
   @media screen and (max-width: $FHD) {
     font-size: 64px;
     line-height: 75px;
-    padding: 30px 40px;
   }
 
   @media screen and (max-width: $mobile) {
@@ -27,6 +24,5 @@
 
   @media screen and (max-width: $mobile-small) {
     font-size: 44px;
-    padding: 30px;
   }
 }
