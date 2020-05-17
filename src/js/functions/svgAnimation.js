@@ -7,6 +7,6 @@ export default function () {
       'style',
       `stroke-dasharray: ${length}; stroke-dashoffset: ${length}; animation-delay: ${delay}s; fill: transparent;`
     );
-    path.classList.add('svgAnimate');
+    path.classList.add('active');
   }
 }

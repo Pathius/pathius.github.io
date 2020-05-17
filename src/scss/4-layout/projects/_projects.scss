@@ -154,6 +154,10 @@
     @media screen and (max-width: $mobile) {
       margin-right: 0px;
     }
+
+    & .active {
+      animation: svgAnimation 2.5s ease forwards;
+    }
   }
 
   &__description {
