@@ -13,6 +13,11 @@
     opacity: 0;
     animation: opacity forwards $time-extra-long $time-extra-long;
 
+    @media screen and (max-width: $UHD) {
+      font-size: 140px;
+      line-height: 160px;
+    }
+
     @media screen and (max-width: $QHD) {
       font-size: 100px;
       line-height: 110px;
@@ -44,14 +49,25 @@
       left: -300px;
       animation: skillsShow300 $time-extra-long forwards;
 
+      @media screen and (max-width: $UHD) {
+        width: 700px;
+        height: 180px;
+        left: -700px;
+        animation: skillsShow700 $time-extra-long forwards;
+      }
+
       @media screen and (max-width: $QHD) {
         width: 500px;
         height: 150px;
+        left: -500px;
+        animation: skillsShow500 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $FHD) {
         width: 300px;
         height: 100px;
+        left: -300px;
+        animation: skillsShow300 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $tablet) {
@@ -94,9 +110,16 @@
       display: inline-block;
       text-transform: uppercase;
 
+      @media screen and (max-width: $UHD) {
+        font-size: 52px;
+        line-height: 60px;
+        margin: 10px 15px;
+      }
+
       @media screen and (max-width: $QHD) {
         font-size: 40px;
         line-height: 52px;
+        margin: 5px 10px;
       }
 
       @media screen and (max-width: $FHD) {

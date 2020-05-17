@@ -38,14 +38,20 @@
     &-item {
       position: relative;
       z-index: 2;
-      padding: 0 5px;
-      margin: 0 20px;
       line-height: 1.2;
       transition: color $time;
       user-select: none;
 
+      @media screen and (max-width: $UHD) {
+        font-size: 36px;
+        padding: 0 10px;
+        margin: 0 40px;
+      }
+
       @media screen and (max-width: $QHD) {
         font-size: 22px;
+        padding: 0 5px;
+        margin: 0 20px;
       }
 
       @media screen and (max-width: $FHD) {
@@ -96,6 +102,10 @@
     display: flex;
     margin-left: 50px;
 
+    @media screen and (max-width: $QHD) {
+      margin-left: 50px;
+    }
+
     @media screen and (max-width: $tablet) {
       margin-left: 20px;
     }
@@ -109,9 +119,16 @@
     margin: 15px;
     transition: transform $time;
 
+    @media screen and (max-width: $UHD) {
+      height: 42px;
+      width: 42px;
+      margin: 20px;
+    }
+
     @media screen and (max-width: $QHD) {
       height: 30px;
       width: 30px;
+      margin: 15px;
     }
 
     @media screen and (max-width: $FHD) {
