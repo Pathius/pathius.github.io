@@ -1,4 +1,6 @@
 @mixin squareBorder() {
+  position: relative;
+
   &:before {
     content: '';
     display: block;
