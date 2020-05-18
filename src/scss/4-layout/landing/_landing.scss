@@ -11,6 +11,7 @@
   &__title {
     position: relative;
     font-weight: bold;
+    animation: opacity 0.8s 0.2s both;
 
     @media screen and (max-width: $UHD) {
       font-size: 160px;
@@ -45,6 +46,10 @@
     @media screen and (max-width: $mobile-small) {
       font-size: 32px;
       line-height: 38px;
+    }
+
+    & .black:after {
+      animation: slideLeft 0.8s 1s ease-in-out both;
     }
 
     &-wrapper {

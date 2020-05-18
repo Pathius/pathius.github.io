@@ -53,6 +53,8 @@
   }
 
   &__description {
+    @include slideCover($color: $white);
+    position: relative;
     margin-right: 70px;
     line-height: 1.5;
     max-width: 500px;

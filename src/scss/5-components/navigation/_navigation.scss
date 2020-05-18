@@ -2,6 +2,7 @@
   @include flex($justify-content: flex-start);
   transition: $time-long;
   margin-right: 70px;
+  animation: opacity both 1s 0.5s;
 
   @media screen and (max-width: $tablet) {
     margin-right: 20px;

@@ -48,6 +48,7 @@
   &__icons {
     @include flex();
     margin: 20px 0;
+    animation: opacity 0.4s 1s both;
 
     &-element {
       filter: invert(100%);
@@ -74,8 +75,10 @@
 
   &__text {
     @include regularText;
+    position: relative;
     margin-top: 40px;
     text-align: center;
+    animation: opacity 0.4s 1s both;
 
     @media screen and (max-width: $UHD) {
       margin-top: 60px;
