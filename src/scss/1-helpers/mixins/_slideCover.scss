@@ -1,9 +1,9 @@
-@mixin slideCover($direction: slideDown) {
+@mixin slideCover($direction: slideDown, $color: $black) {
   &:after {
     content: '';
     display: block;
     position: absolute;
-    background-color: $black;
+    background-color: $color;
     top: 0;
     bottom: 0;
     left: 0;
