@@ -1,8 +1,8 @@
-export default function () {
-  let paths = Array.from(document.querySelectorAll('.pizzaapp-svg path'));
+export default function (id) {
+  let paths = Array.from(document.querySelectorAll(`#${id} path`));
   for (let [index, path] of paths.entries()) {
     let length = Math.ceil(path.getTotalLength());
-    let delay = (0.3 * index).toFixed(1);
+    let delay = (0.25 * index).toFixed(1);
     path.setAttribute(
       'style',
       `stroke-dasharray: ${length}; stroke-dashoffset: ${length}; animation-delay: ${delay}s; fill: transparent;`

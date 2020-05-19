@@ -10,6 +10,7 @@ export default function () {
 
     // Assign class names
     project.classList.add('project', 'animation');
+    project.id = projectData.id;
     description.className = 'project__description';
 
     // Assign data to variables

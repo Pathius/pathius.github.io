@@ -47,7 +47,12 @@
       margin-right: 0px;
     }
 
+    & path {
+      opacity: 0;
+    }
+
     & .active {
+      opacity: 1;
       animation: svgAnimation 2.5s ease forwards;
     }
   }

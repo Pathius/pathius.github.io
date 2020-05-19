@@ -1,5 +1,5 @@
 .projects {
-  @include flex();
+  @include flex($align-items: flex-start);
   width: 100%;
 
   @media screen and (max-width: $tablet) {

@@ -1,3 +1,5 @@
+import svgAnimation from './svgAnimation';
+
 export default function () {
   const elements = Array.from(document.querySelectorAll('.animation'));
   const observer = new IntersectionObserver(
@@ -5,6 +7,9 @@ export default function () {
       for (let entry of entries) {
         if (entry.intersectionRatio >= 0.5) {
           entry.target.classList.add('active');
+          if (entry.target.classList.contains('project')) {
+            svgAnimation(entry.target.id);
+          }
         }
       }
     },
