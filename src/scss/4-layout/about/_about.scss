@@ -50,6 +50,7 @@
     display: block;
     position: relative;
     width: 40%;
+    opacity: 0;
 
     @media screen and (max-width: $UHD) {
       margin-left: 240px;
