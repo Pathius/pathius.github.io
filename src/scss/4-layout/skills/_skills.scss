@@ -91,6 +91,7 @@
 .tools {
   @extend .skills;
   background-color: $black;
+  overflow: hidden;
 
   &__title {
     @extend .skills__title;
