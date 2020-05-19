@@ -42,6 +42,11 @@
 
     &-wrapper {
       display: inline-block;
+
+      &::before,
+      &::after {
+        border: 10px solid transparent;
+      }
     }
   }
 

@@ -42,6 +42,11 @@
       @media screen and (max-width: $FHD) {
         margin-top: 40px;
       }
+
+      &::before,
+      &::after {
+        border: 10px solid transparent;
+      }
     }
   }
 
