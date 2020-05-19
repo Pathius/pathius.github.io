@@ -9,7 +9,7 @@ export default function () {
     const name = document.createElement('div');
 
     // Assign class names
-    project.className = 'project';
+    project.classList.add('project', 'animation');
     description.className = 'project__description';
 
     // Assign data to variables

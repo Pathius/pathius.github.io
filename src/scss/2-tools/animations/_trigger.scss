@@ -1,0 +1,77 @@
+.active {
+  // LANDING PAGE
+  &.landing__title {
+    animation: opacity 0.8s 0.2s both;
+
+    & .black:after {
+      animation: slideLeft 0.8s 1s ease-in-out both;
+    }
+  }
+
+  // ABOUT SECTION
+  .about {
+    &__title {
+      animation: opacity $time-extra-long forwards 1s;
+
+      &-wrapper {
+        @include squareBorder;
+      }
+    }
+    &__description {
+      @include slideCover;
+    }
+  }
+
+  // SKILLS SECTION
+  .skills__title {
+    animation: opacity both $time-extra-long $time-extra-long;
+
+    &-wrapper {
+      animation: skillsShow300 $time-extra-long forwards;
+
+      @media screen and (max-width: $UHD) {
+        animation: skillsShow700 $time-extra-long forwards;
+      }
+
+      @media screen and (max-width: $QHD) {
+        animation: skillsShow500 $time-extra-long forwards;
+      }
+
+      @media screen and (max-width: $FHD) {
+        animation: skillsShow300 $time-extra-long forwards;
+      }
+    }
+  }
+  .skills__list {
+    animation: opacity both $time-extra-long Calc($time-extra-long + $time-long);
+  }
+
+  // TOOLS SECTION
+  .tools__title-wrapper {
+    animation: slideRight $time-extra-long both;
+  }
+
+  // PROJECTS SECTION
+  &.projects__title {
+    animation: opacity $time-extra-long $time-extra-long both;
+  }
+  & .project__description {
+    @include slideCover($color: $white);
+  }
+
+  // CONTACT SECTION
+  & .contact {
+    &__title {
+      animation: opacity $time-extra-long forwards 1s;
+    }
+    &__title-wrapper {
+      @include squareBorder;
+    }
+    &__icons {
+      animation: opacity 0.4s 1s both;
+    }
+    &__text {
+      animation: opacity 0.4s 1s both;
+    }
+  }
+}

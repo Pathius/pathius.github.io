@@ -25,7 +25,7 @@
   &__title {
     @include sectionTitle($color: $white);
     letter-spacing: 4px;
-    animation: opacity $time-extra-long $time-extra-long both;
+    opacity: 0;
 
     &-wrapper {
       @include flex();

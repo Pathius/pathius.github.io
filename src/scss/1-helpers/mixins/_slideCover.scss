@@ -1,4 +1,5 @@
 @mixin slideCover($direction: slideDown, $color: $black) {
+  opacity: 1;
   &:after {
     content: '';
     display: block;

@@ -6,8 +6,7 @@
     @include sectionTitle($color: $white);
     transform: translateX(51%);
     letter-spacing: 4px;
-    animation: opacity both $time-extra-long $time-extra-long;
-
+    opacity: 0;
     &-black {
       color: $black;
     }
@@ -19,21 +18,17 @@
       justify-content: flex-end;
       align-items: center;
       left: -300px;
-      animation: skillsShow300 $time-extra-long forwards;
 
       @media screen and (max-width: $UHD) {
         left: -700px;
-        animation: skillsShow700 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $QHD) {
         left: -500px;
-        animation: skillsShow500 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $FHD) {
         left: -300px;
-        animation: skillsShow300 $time-extra-long forwards;
       }
 
       @media screen and (max-width: $mobile) {
@@ -47,7 +42,7 @@
     width: 50%;
     margin: 80px auto;
     text-align: center;
-    animation: opacity both $time-extra-long Calc($time-extra-long + $time-long);
+    opacity: 0;
 
     @media screen and (max-width: $tablet) {
       width: 90%;
@@ -107,9 +102,8 @@
       align-self: flex-end;
       justify-content: flex-start;
       background-color: $white;
-      left: 0;
+      left: 100%;
       right: 100%;
-      animation: slideRight $time-extra-long forwards;
     }
   }
 

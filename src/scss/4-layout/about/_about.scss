@@ -17,7 +17,6 @@
   &__title {
     @include sectionTitle($color: $white);
     opacity: 0;
-    animation: opacity $time-extra-long forwards 1s;
 
     @media screen and (max-width: $UHD) {
       padding: 70px 80px;
@@ -42,14 +41,12 @@
     }
 
     &-wrapper {
-      @include squareBorder;
       display: inline-block;
     }
   }
 
   &__description {
     @include regularText;
-    @include slideCover;
     display: block;
     position: relative;
     width: 40%;
