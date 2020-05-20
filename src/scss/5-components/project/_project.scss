@@ -28,6 +28,12 @@
     margin-bottom: 0;
   }
 
+  & div {
+    @media screen and (min-width: $tablet) {
+      align-self: flex-start;
+    }
+  }
+
   & svg {
     margin-right: 60px;
 
@@ -54,7 +60,7 @@
 
     & .active {
       opacity: 1;
-      animation: svgAnimation 2.5s ease forwards;
+      animation: svgAnimation 1.3s linear forwards;
     }
   }
 
@@ -111,7 +117,8 @@
     }
 
     @media screen and (max-width: $tablet) {
-      margin: 0 5px;
+      padding: 0;
+      margin-right: 15px;
     }
 
     @media screen and (max-width: $mobile) {
