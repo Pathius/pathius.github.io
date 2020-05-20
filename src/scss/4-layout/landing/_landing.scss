@@ -72,6 +72,8 @@
   }
 
   &__image {
+    animation: opacity 1s 1s both;
+
     @media screen and (max-width: $UHD) {
       min-height: 60vh;
     }
