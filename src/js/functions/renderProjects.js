@@ -1,3 +1,6 @@
+// Function created to render projects in projects section, it takes array of objects
+// from projects.js file and creates DOM elements using its data
+
 import projectsData from '../data/projects';
 
 export default function () {
