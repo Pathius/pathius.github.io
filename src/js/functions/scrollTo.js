@@ -10,7 +10,7 @@ export default function (id, duration = 2000) {
   function animation(currentTime) {
     if (startTime === null) startTime = currentTime;
     const timeElapsed = currentTime - startTime;
-    const run = ease(timeElapsed, windowPosition, distance, duration);
+    const run = easeInOutQuad(timeElapsed, windowPosition, distance, duration);
     window.scrollTo(0, run);
     if (timeElapsed < duration) requestAnimationFrame(animation);
   }
