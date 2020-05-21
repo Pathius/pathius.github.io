@@ -24,6 +24,10 @@
     @media screen and (max-width: $mobile) {
       margin-left: 10px;
     }
+
+    @media screen and (orientation: landscape) and (max-width: $tablet-big) and (max-height: 400px) {
+      margin-left: 10px;
+    }
   }
 
   &__title {

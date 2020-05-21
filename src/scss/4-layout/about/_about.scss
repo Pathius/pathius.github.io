@@ -82,5 +82,9 @@
       width: 100%;
       margin-left: 0px;
     }
+
+    @media screen and (orientation: landscape) and (max-width: $tablet-big) and (max-height: 400px) {
+      margin-left: 40px;
+    }
   }
 }
