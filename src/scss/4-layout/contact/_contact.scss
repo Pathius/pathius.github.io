@@ -57,6 +57,7 @@
 
     &-element {
       filter: invert(100%);
+      transition: transform $time;
 
       @media screen and (max-width: $UHD) {
         height: 50px;
@@ -74,6 +75,10 @@
         height: 26px;
         width: 26px;
         margin: 0 15px;
+      }
+
+      &:hover {
+        transform: scale(1.15);
       }
     }
   }
