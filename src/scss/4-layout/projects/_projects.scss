@@ -16,12 +16,15 @@
   &__heading {
     width: 40%;
     margin-top: 70px;
+    position: sticky;
+    top: 60px;
 
     @media screen and (max-width: $UHD) {
       margin-top: 90px;
     }
 
     @media screen and (max-width: $tablet) {
+      position: static;
       @include flex();
       width: 100%;
       margin-top: 40px;
@@ -31,6 +34,7 @@
       @include flex();
       width: 100%;
       margin-top: 40px;
+      position: static;
     }
   }
 
@@ -42,12 +46,9 @@
     &-wrapper {
       @include flex();
       @include titleWrapper($background-color: $black);
-      position: sticky;
-      top: 60px;
       padding: 0 20px 0 40px;
 
       @media screen and (max-width: $tablet) {
-        position: static;
         justify-content: center;
         width: 70%;
         margin-bottom: 60px;
@@ -55,7 +56,6 @@
       }
 
       @media screen and (orientation: landscape) and (max-width: $tablet-big) and (max-height: 400px) {
-        position: static;
         justify-content: center;
         width: 70%;
         padding: 0 20px;
