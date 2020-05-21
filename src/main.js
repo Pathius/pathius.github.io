@@ -8,7 +8,7 @@ import animationTrigger from './js/functions/animationTrigger';
 
 import './scss/style.scss';
 
-experience('experience', [['2020, 1, 18']]);
+experience('experience', [['2020/2/18']]);
 
 const burger = document.querySelector('.burger');
 
