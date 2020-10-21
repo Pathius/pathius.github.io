@@ -16,4 +16,4 @@ scrollTo();
 svgAnimation();
 renderProjects();
 animationTrigger();
-experience('experience', [['2020/2/18']]);
+experience('experience', [['2020/2/1']]);
